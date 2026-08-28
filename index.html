@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DIM Tools</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',system-ui,sans-serif;background:#eef1f6;color:#0f172a;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
+.wrap{max-width:760px;width:100%}
+.brand{display:flex;align-items:center;gap:12px;margin-bottom:6px}
+.logo{width:40px;height:40px;background:#d97706;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#fff}
+.logo svg{width:22px;height:22px}
+h1{font-size:24px;font-weight:800;letter-spacing:-.02em}
+.sub{color:#64748b;font-size:14px;margin:6px 0 26px}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:640px){.cards{grid-template-columns:1fr}}
+.card{display:block;text-decoration:none;color:inherit;background:#fff;border:1px solid #e6eaf0;border-radius:14px;padding:22px;box-shadow:0 1px 3px rgba(15,23,42,.06);transition:transform .12s,box-shadow .12s,border-color .12s}
+.card:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(15,23,42,.09);border-color:#f6d9a8}
+.ic{width:38px;height:38px;border-radius:9px;display:flex;align-items:center;justify-content:center;color:#fff;margin-bottom:12px}
+.ic svg{width:20px;height:20px}
+.ic.a{background:#d97706}.ic.b{background:#0f172a}
+.card h2{font-size:17px;font-weight:800;margin-bottom:6px}
+.card p{font-size:12.5px;color:#64748b;line-height:1.55}
+.go{margin-top:14px;font-size:12.5px;font-weight:700;color:#b45309}
+.foot{margin-top:22px;font-size:11.5px;color:#94a3b8;line-height:1.6}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand">
+    <div class="logo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+    <h1>DIM Tools</h1>
+  </div>
+  <div class="sub">Media planning tools · live-connected to the client ZIP sheet.</div>
+  <div class="cards">
+    <a class="card" href="./launch-planner.html">
+      <div class="ic a"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+      <h2>Launch Planner</h2>
+      <p>Enter a new client's office ZIP + budget → target ZIP list, Google/Meta split, forecast, ad group, and a client-ready PDF.</p>
+      <div class="go">Open Launch Planner →</div>
+    </a>
+    <a class="card" href="./spend-planner.html">
+      <div class="ic b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+      <h2>Spend Planner</h2>
+      <p>Already have a ZIP list? Paste it in → recommended monthly spend, the split, and expected leads &amp; cost per lead.</p>
+      <div class="go">Open Spend Planner →</div>
+    </a>
+  </div>
+  <div class="foot">Numbers are conservative estimates from real account data. Client-territory tags update automatically from the <b>data</b> tab of the ZIP sheet.</div>
+</div>
+</body>
+</html>
